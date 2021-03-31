@@ -1,4 +1,4 @@
-import { gql } from "apollo-server"
+import { gql } from "apollo-server";
 
 export default gql`
   type Query {
@@ -10,6 +10,6 @@ export default gql`
   }
 
   type Mutation {
-    uploadFile(file: String!): FileInformation
+    uploadFile(file: Upload!): FileInformation
   }
-`
+`;
